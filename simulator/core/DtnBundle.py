@@ -57,8 +57,8 @@ class Bundle(Message):
     def from_flow(cls, env, flow):
         # Create new bundle
         bundle = Bundle(env, flow['Orig'], flow['Dest'], flow['DataType'],
-                        flow['BundleSize'], flow['Critical'], flow['Latency'],
-                        fid=flow['fid'])
+                        flow['BundleSize'], 1800, flow['Critical'],
+                        fid=flow['fid'], TTL=1800)
 
         # If the flow defines a route, store it too
         if 'Route' in flow: bundle.route = flow['Route']

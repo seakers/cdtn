@@ -176,7 +176,8 @@ class DtnCgrNeighborManager(Simulable):
 
             # Set the current contact properties
             self.current_cid      = cid
-            self.current_dr       = row['rate']
+            if not hasattr(self, 'current_dr'):
+                self.current_dr = row['rate']
             self.current_range    = row['range']
             self.queue.capacity   = row['duration']*self.current_dr
             self.queue.next_close = row['tend']
@@ -193,7 +194,7 @@ class DtnCgrNeighborManager(Simulable):
 
             # Delete current contact properties
             self.current_cid      = None
-            self.current_dr       = None
+            # self.current_dr       = None
             self.current_range    = None
             self.queue.capacity   = None
             self.queue.next_close = None
@@ -230,4 +231,13 @@ class DtnCgrNeighborManager(Simulable):
             # Do throttling mechanism, i.e you cannot send for a while. This "matches" the exit of bundles
             # from the priority queue and the throughput available in the convergence layer.
             yield self.env.timeout(rt_record.bundle.data_vol/self.current_dr)
-    
+
+    def set_new_datarate(self, Tprop, new_datarate):
+        self.env.process(self.do_set_new_datarate(Tprop, new_datarate))
+
+    def do_set_new_datarate(self, Tprop, new_datarate):
+        self.commanded_datarate = new_datarate
+
+        yield self.env.timeout(Tprop)
+
+        self.current_dr = self.commanded_datarate

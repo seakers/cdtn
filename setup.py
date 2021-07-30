@@ -68,7 +68,7 @@ setup(
     url              = 'https://github.com/msancheznet/dtnsim',
     python_requires  = '>=3.6.0',
     setup_requires   = [],                  # See conda_environment.yaml for dependencies
-    install_requires = ['setuptools'],      # See conda_environment.yaml for dependencies
+    install_requires = ['setuptools', 'numpy'],      # See conda_environment.yaml for dependencies
     extras_require   = {
                 'test': [],
                 'docs': ['sphinx', 'sphinx_bootstrap_theme'],

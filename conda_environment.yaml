@@ -14,8 +14,11 @@ dependencies:
   - pip
   - sphinx
   - xlsxwriter
+  - pytorch>=1.8.1
   - pip:
     - simpy
     - pydantic==0.13
     - sphinx_bootstrap_theme
+    - gym
+    - stable-baselines3
 

@@ -305,7 +305,7 @@ class DtnNode(Simulable):
 
         # If the router has indicated to drop, do it
         if records_to_fwd == 'drop':
-            self.drop(bundle, 'router_drops')
+            self.drop(bundle, 'broadcast')
             return
 
         for record in records_to_fwd:

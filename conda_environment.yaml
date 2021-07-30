@@ -21,4 +21,5 @@ dependencies:
     - sphinx_bootstrap_theme
     - gym
     - stable-baselines3
+    - notebook
 

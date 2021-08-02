@@ -5,7 +5,7 @@ CDTN: Delay Tolerant Network Management Using Reinforcement Learning
 
 1. Create a conda environment using the conda_environment.yaml file:
 ```shell
-conda env create -f .\cdtn\conda_environment.yaml
+conda env create -f conda_environment.yaml
 ```
 2. Activate conda environment:
 

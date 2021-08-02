@@ -1,3 +1,33 @@
+CDTN: Delay Tolerant Network Management Using Reinforcement Learning
+=======================
+
+## Installation
+
+1. Create a conda environment using the conda_environment.yaml file:
+```shell
+conda env create -f .\cdtn\conda_environment.yaml
+```
+2. Activate conda environment:
+
+```shell
+conda activate dtnsim
+```
+
+3. From project root install CDTN gym environment
+
+```shell
+pip install -e ./RL/gym-cdtn
+```
+
+## Usage
+
+1. Run training using training.py
+
+2. Run evaluation of the trained agent using "load_and_evaluate_lunar_agent.py" to evaluate the trained agent in the lunar scenario or "load_and_evaluate_EO_agent.py" in the Earth Observation Scenario
+
+
+
+
 DtnSim documentation: https://dtnsim.readthedocs.io/en/latest/
 
 License Terms

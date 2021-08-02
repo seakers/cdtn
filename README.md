@@ -23,7 +23,7 @@ pip install -e ./RL/gym-cdtn
 
 1. Run training using the file "training.py" from ./RL/ directory 
 
-2. Run evaluation of the trained agent using the files "load_and_evaluate_lunar_agent.py" to evaluate the trained agent in the lunar scenario or "load_and_evaluate_EO_agent.py" in the Earth Observation Scenario, both located in the ./RL/ directory 
+2. Run evaluation of the trained agent using the files "load_and_evaluate_lunar_agent.py" for the lunar scenario or "load_and_evaluate_EO_agent.py" for the Earth Observation Scenario, both located in the ./RL/ directory 
 
 
 ## DtnSim Simulator:

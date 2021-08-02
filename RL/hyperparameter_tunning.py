@@ -101,7 +101,7 @@ def train_with_hyperparameters(_log_dir=None, learning_rate=None, gamma=None, le
 if __name__ == '__main__':
     # Run in parallel the training for several learning rates
     ncpu = 4  # number of threads
-    log_dir = "./RL/gym-cdtn/results/training_results/logs_dqn_lr_"
+    log_dir = "./RL/results/training_results/logs_dqn_lr_"
 
     learning_rates = [0.01, 0.001, 0.0001, 0.00001]
 

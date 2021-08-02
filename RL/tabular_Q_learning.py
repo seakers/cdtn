@@ -112,7 +112,7 @@ def qLearning(env, num_episodes, log_dir, discount_factor=0.99,
 
 
 # Create log dir
-log_dir = "./RL/gym-cdtn/results/logs_q_learning_tabular/"
+log_dir = "./RL/results/logs_q_learning_tabular/"
 os.makedirs(log_dir, exist_ok=True)
 
 # Create and wrap the environment

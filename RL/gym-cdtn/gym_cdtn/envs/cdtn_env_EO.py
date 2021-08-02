@@ -18,7 +18,7 @@ class CdtnEnvEO(gym.Env):
     def __init__(self):
         """Constructor for lunar scenario environment"""
         # Configuration file path
-        config_file = './RL/gym-cdtn/inputs/EO_scenario_inputs/constellation_config.yaml'
+        config_file = './RL/inputs/EO_scenario_inputs/constellation_config.yaml'
         # Load configuration file
         config = load_configuration_file(config_file)
         # Ensure the configuration dictionary is ok

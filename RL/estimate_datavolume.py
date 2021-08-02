@@ -22,7 +22,7 @@ def update_datavolume(environment, dv, ts):
 
 
 # Define configuration file (relative to working directory)
-config_file = './RL/gym-cdtn/inputs/EO_scenario_inputs/constellation_config_unconstrained.yaml'
+config_file = './RL/inputs/EO_scenario_inputs/constellation_config_unconstrained.yaml'
 
 # Load configuration file
 config = load_configuration_file(config_file)

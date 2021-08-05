@@ -18,7 +18,7 @@ class CdtnEnvContinuousPrioritiesHybrid(gym.Env):
     def __init__(self):
         """Constructor for lunar scenario environment"""
         # Configuration file path
-        config_file = './RL/inputs/lunar_scenario7.yaml'
+        config_file = './RL/inputs/lunar_scenario_priorities_hybrid.yaml'
         # Load configuration file
         config = load_configuration_file(config_file)
         # Ensure the configuration dictionary is ok

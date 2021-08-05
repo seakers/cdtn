@@ -27,7 +27,7 @@ pip install -e ./RL/gym-cdtn
 
 Note:
 
-There have been included several versions of the gym-cdtn environment. Check ./RL/gym-cdtn/gym_cdtn___init__.py for the different environments ids.
+Several versions of the gym-cdtn environment have been included in this package. Check ./RL/gym-cdtn/gym_cdtn/__init__.py for the different environments ids.
 
 - For the environment used in the ASCEND 2020 paper (https://arc.aiaa.org/doi/abs/10.2514/6.2020-4007) use `gym.make('cdtn-ASCEND2020-v0')`.
 - For the environment used in the JAIS 2021 paper (https://arc.aiaa.org/doi/abs/10.2514/1.I010920) use `gym.make('cdtn-JAIS2021-v0')`.

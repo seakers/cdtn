@@ -25,6 +25,17 @@ pip install -e ./RL/gym-cdtn
 
 2. Run evaluation of the trained agent using the files "load_and_evaluate_lunar_agent.py" for the lunar scenario or "load_and_evaluate_EO_agent.py" for the Earth Observation Scenario, both located in the ./RL/ directory 
 
+Note:
+
+There have been included several versions of the gym-cdtn environment. Check ./RL/gym-cdtn/gym_cdtn___init__.py for the different environments ids.
+
+- For the environment used in the ASCEND 2020 paper (https://arc.aiaa.org/doi/abs/10.2514/6.2020-4007) use `gym.make('cdtn-ASCEND2020-v0')`.
+- For the environment used in the JAIS 2021 paper (https://arc.aiaa.org/doi/abs/10.2514/1.I010920) use `gym.make('cdtn-JAIS2021-v0')`.
+
+
+## Plotting results
+
+Check ./RL/results directory for the training/evaluation results obtained and the jupyter notebooks used to plot the figures that appear in published papers.
 
 ## DtnSim Simulator:
 
